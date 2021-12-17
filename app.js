@@ -78,7 +78,6 @@ document.addEventListener('DOMContentLoaded', function(){
    
     var cW = document.documentElement.clientWidth; 
     var cH = document.documentElement.clientHeight; 
-    console.log(cW + ' ' + cH);
     if (cW < 500) {
         document.querySelector('.btn').addEventListener('click', function() {
             document.querySelector('.question').style.display = 'block';
