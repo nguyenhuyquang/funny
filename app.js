@@ -83,4 +83,18 @@ document.addEventListener('DOMContentLoaded', function(){
         document.querySelector('.answer').style.display = 'none';
         document.querySelector('.thanks').style.display = 'block';
     })
+    document.querySelector('#play').addEventListener('click', function() {
+        Swal.fire({
+            confirmButtonText: '<i class="far fa-play-circle" style="font-size:40px;"></i>',
+            allowOutsideClick: false,
+        }).then((result) => {
+            if (result.isConfirmed) {
+                document.querySelector('#audio').play()
+            }
+        })
+        document.querySelector('.swal2-popup').style.backgroundColor = 'rgba(0,0,0,.0)';
+        document.querySelector('.swal2-confirm').style.backgroundColor = 'rgba(0,0,0,.0)';
+        document.querySelector('.swal2-styled').style.boxShadow = '0 0 0 3px rgba(0,0,0,.0)/50%';
+    })
+    document.querySelector('#play').click();
 });

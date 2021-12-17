@@ -7,10 +7,12 @@
     <title>Thiệp mời đi bay</title>
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 <body>
-    <audio controls hidden autoplay loop>
+    <button id="play" style="display:none;">Click</button>
+    <audio controls hidden autoplay loop id="audio">
         <source src="last-ch.mp3" type="audio/mp3">
     </audio>
     <div id="snow"></div>
@@ -36,5 +38,5 @@
         <button class="btn"><i class="fas fa-chevron-down"></i></button>
     </div>
 </body>
-<script type="text/javascript" src="app.js">  </script>
+<script type="text/javascript" src="app.js"></script>
 </html>
