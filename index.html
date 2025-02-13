@@ -1,42 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Thiệp mời đi bay</title>
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-</head>
-<body>
-    <button id="play" style="display:none;">Click</button>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <button id="play" style="display: none">Click</button>
     <audio controls hidden autoplay loop id="audio">
-        <source src="last-ch.mp3" type="audio/mp3">
+      <source src="music.mp3" type="audio/mp3" />
     </audio>
     <div id="snow"></div>
     <div class="background">
-        <div class="left-container">
-            <p class="text">Merry</p>
-            <p class="text">Christmas</p>
-            <p class="text-under">Best wishes for you!</p>
-            <p class="text-under question" style="display: none; width: 300px">Would you like to hang out with me ?</p>
-            <p class="text-under thanks"  style="display: none; width: 300px">Contact me!</p>
-            <div class="answer" style="display: none;">
-                <button class="btn-new btn-yes">Yes</button>
-                <button class="btn-new btn-no">No</button>
-            </div>
-            <div>
-                <img src="gif-01.gif" width="200px" style="transform: rotate(20deg);">
-                <img src="gif-01.gif" width="200px" style="transform: rotate(-20deg);">
-            </div>
+      <div class="left-container">
+        <p class="text">Hi!</p>
+        <p class="text" style="font-size: 50px">Lưu Thị Thuý Nga</p>
+        <p class="text-under">Chúc chị có một tuần làm việc vui vẻ!</p>
+        <p
+          class="text-under question"
+          style="
+            display: none;
+            width: 400px;
+            font-size: 24px;
+            line-height: 32px;
+          "
+        >
+          Chị có muốn ra ngoài vào tối thứ 6 và đi ăn bún riêu với em không?
+        </p>
+        <!-- <p class="text-under thanks"  style="display: none; width: 300px">Contact me!</p> -->
+        <div class="answer" style="display: none">
+          <button class="btn-new btn-yes">Yes</button>
+          <button class="btn-new btn-no">No</button>
         </div>
-        <div class="right-container">
-
-        </div>
-        <button class="btn"><i class="fas fa-chevron-down"></i></button>
+      </div>
+      <div class="right-container"></div>
+      <button class="btn"><i class="fas fa-chevron-down"></i></button>
     </div>
-</body>
-<script type="text/javascript" src="app.js"></script>
+  </body>
+  <script type="text/javascript" src="app.js"></script>
 </html>
